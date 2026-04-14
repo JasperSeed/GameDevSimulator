@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Dev Simulator | Links</title>
+  <meta name="description" content="Get Game Dev Simulator on Meta Quest Store and Steam.">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      background: #000;
+    }
+
+    .bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: url('images/background.png') center center / cover no-repeat fixed;
+    }
+    .bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      padding: 60px 24px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 40px;
+    }
+
+    .logo img {
+      max-width: 360px;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5));
+    }
+
+    .heading {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1.3;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+    }
+
+    .badges {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .store-badge {
+      display: inline-block;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    .store-badge:hover {
+      transform: scale(1.06);
+      opacity: 0.9;
+    }
+    .store-badge img {
+      height: 56px;
+      width: auto;
+      filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.4));
+    }
+
+    .coming-soon-badge {
+      display: inline-block;
+    }
+    .coming-soon-badge img {
+      height: 56px;
+      width: auto;
+      filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.4));
+    }
+
+    .contact {
+      font-size: 0.95rem;
+      opacity: 0.75;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      width: 100%;
+    }
+    .contact a {
+      color: #fff;
+      text-decoration: none;
+      opacity: 0.9;
+    }
+    .contact a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      .heading { font-size: 1.4rem; }
+      .logo img { max-width: 260px; }
+      .container { padding: 40px 16px 30px; gap: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg"></div>
+
+  <div class="container">
+
+    <div class="logo">
+      <img src="images/logo.png" alt="Game Dev Simulator">
+    </div>
+
+    <h1 class="heading">Available now on Steam and the Meta Store:</h1>
+
+    <div class="badges">
+      <a class="store-badge" href="https://store.steampowered.com/app/4546050/Game_Dev_Simulator/" target="_blank" rel="noopener">
+        <img src="images/steam-logo.png" alt="Get it on Steam">
+      </a>
+      <a class="store-badge" href="https://www.meta.com/en-gb/experiences/game-dev-simulator/24800421029576599/" target="_blank" rel="noopener">
+        <img src="images/meta-quest-logo.png" alt="Get it on Meta Quest Store">
+      </a>
+    </div>
+
+    <p class="heading">Coming soon to:</p>
+
+    <div class="badges">
+      <span class="coming-soon-badge">
+        <img src="images/playstation.png" alt="PlayStation">
+      </span>
+      <span class="coming-soon-badge">
+        <img src="images/pico.png" alt="Pico">
+      </span>
+    </div>
+
+    <div class="contact">
+      Contact: <a href="mailto:Jasper@JasperSeed.com">Jasper@JasperSeed.com</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
